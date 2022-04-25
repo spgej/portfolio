@@ -1,5 +1,7 @@
 html,
 body {
+  background-color: #282c34;
+  color: #f8f8ff;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +15,159 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.nasa-logo {
+  margin: 10px;
+  height: 70px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 20px 30px 50px;
+  height: auto;
+  text-align: left;
+  font-size: calc(4px + 2vim);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.description2 {
+  height: auto;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin: 30px;
+}
+
+.App {
+  background-color: #282c34;
+  margin: 0;
+  height: auto;
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #1a1d24;
+  border-radius: .5rem;
+  padding: 50px 0;
+}
+
+.header {
+  margin-bottom: auto;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  display: block;
+}
+
+.footer {
+  margin-top: auto;
+  bottom: 0;
+  padding: .1rem;
+  width: 100%;
+  background-color: #1a1d24;
+  color: white;
+}
+
+.footer p {
+  text-align: center;
+  opacity: 50%;
+  font-size: .7rem;
+}
+
+.content {
+  color: white;
+  max-width: 500px;
+  height: auto;
+}
+
+.content h2 {
+  font-size: 1.9rem;
+  margin-top: 0;
+}
+
+#image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: .3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  background-color: #3c3f43;
+  font-family: 'Titillium Web', sans-serif;
+  margin: auto 10px;
+  height: 50px;
+  width: 225px;
+  border-radius: .3rem;
+  border: #1a1d24;
+  color: #fdfdfd;
+  font-size: 1.2rem;
+}
+
+.rbtn {
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  background-color: #3c3f43;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border: #1a1d24;
+  color: #fdfdfd;
+}
+
+.rbtn:hover {
+    background-color: #1a1d24;
+  border: solid .5px white;
+}
+
+.btn:hover {
+  background-color: #1a1d24;
+  border: solid .5px white;
+}
+
+.btn2 {
+  display: none;
+}
+
+.content h6 {
+  margin: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  .btn {
+    width: 100%;
+    border-radius: 0;
+  }
 }
