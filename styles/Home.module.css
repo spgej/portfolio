@@ -31,6 +31,7 @@
 .title a {
   color: #0070f3;
   text-decoration: none;
+  font-family: "Nexa Bold", sans-serif;
 }
 
 .title a:hover,
@@ -97,6 +98,7 @@
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  font-family: "Nexa Bold", sans-serif;
 }
 
 .card p {

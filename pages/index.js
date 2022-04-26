@@ -10,10 +10,11 @@ export default function Home() {
         <title>Fourth Page Web Development</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="./Nexa/NexaDemo-Bold.ttf" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Portfolio</h1>
+        <h1 className={styles.title} >Portfolio</h1>
         <div className={styles.grid}>
           <Link href="/NASA/App">
           <a className={styles.card}>
@@ -41,7 +42,7 @@ export default function Home() {
           >
             <h2>Tech Journalism &rarr;</h2>
             <p>
-              Recreation of IGN using Bootstrap, MongoDB, EJS. Deployed using Heroku.
+              Recreation of IGN using Bootstrap, MongoDB, EJS.
             </p>
           </a>
         </div>
