@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link"
+import Navbar from "../../components/Navbar";
+
 
 const NASA_API =
   "https://api.nasa.gov/planetary/apod?api_key=HrgvaTyc5brnhHTM6peabL5SWx5JlB4x4g5M1ybR&count=1";
@@ -28,6 +30,8 @@ export default function App() {
   }
 
   return (
+    <>
+    <Navbar />
     <div className="App">
         <main className="content">
         <h2>Astronomy Picture of the Day</h2>
@@ -57,5 +61,6 @@ export default function App() {
             </Link>
 
     </div>
+    </>
   );
 }

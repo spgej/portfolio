@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Nexa Bold';
   src: url('nexademo-bold-webfont.woff') format('woff'),
-       url('nexademo-bold-webfont.woff2') format('woff2');
+    url('nexademo-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Nexa Light';
   src: url('nexademo-light-webfont.woff') format('woff'),
-       url('nexademo-light-webfont.woff2') format('woff2');
+    url('nexademo-light-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 
@@ -23,7 +23,7 @@ body {
   color: #f8f8ff;
   padding: 0;
   margin: 0;
-  font-family: Nexa Light, Nexa Bold, sans-serif;
+  font-family: Nexa Light, sans-serif;
 }
 
 a {
@@ -33,6 +33,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Nexa Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 .nasa-logo {
@@ -152,7 +161,7 @@ a {
 }
 
 .rbtn:hover {
-    background-color: #1a1d24;
+  background-color: #1a1d24;
   border: solid .5px white;
 }
 
@@ -188,7 +197,7 @@ a {
   max-height: 500px;
   pointer-events: none;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   opacity: 40%;
 }
 
@@ -197,9 +206,15 @@ a {
   max-height: 500px;
   pointer-events: none;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   opacity: 40%;
 
+}
+
+.subheading {
+  font-family: "Nexa Light", sans-serif;
+  z-index: 1;
+  text-transform: lowercase;
 }
 
 
@@ -211,7 +226,7 @@ a {
 
 .App-header {
   background-color: #282c34;
-  margin: 200px auto 75px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,15 +241,28 @@ a {
 
 .fourth-container {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  background-color: #282c34;
+}
+
+.fourth-container div {
+  margin-top: 30px;
+}
+
+.dev-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .cta {
-  max-width: 500px;
   margin: 0 50px;
-  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "Nexa Bold", sans-serif;
+  font-size: 8vw;
   z-index: 3;
 }
 
@@ -254,19 +282,21 @@ a {
   color: white;
 }
 
+.ctabtndiv {
+  display: flex;
+  padding: 40px 0;
+  margin-bottom: -90px;
+}
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-
-
-
-
 
 
 @media only screen and (max-width: 350px) {
