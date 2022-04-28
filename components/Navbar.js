@@ -5,26 +5,24 @@ import {
     BreadcrumbSeparator,
   } from '@chakra-ui/react'
 import Link from "next/link"
-import { Image } from '@chakra-ui/react'
 
 
 const Navbar = () => {
   return (
 
-
-        <Breadcrumb color="text" bg="background" fontFamily="Nexa Light" padding="30px">
-          <BreadcrumbItem>
+        <Breadcrumb color="text" bg="border" fontFamily="Nexa Light" padding="30px">
+          <BreadcrumbItem isCurrentPage>
             <Link href="/">
               <BreadcrumbLink padding="0 20px">home</BreadcrumbLink>
             </Link>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <Link href="/">
+            <Link href="/About/Dev">
               <BreadcrumbLink padding="0 20px">dev</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>
         <BreadcrumbItem>
-            <Link href="Portfolio/Examples">
+            <Link href="/Portfolio/Examples">
               <BreadcrumbLink padding="0 20px">portfolio</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>

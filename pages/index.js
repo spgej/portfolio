@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from "/components/Navbar"
 import { Button, ButtonGroup } from '@chakra-ui/react'
+import Footer from "/components/Footer"
 
 export default function Home() {
   return (
@@ -28,9 +29,10 @@ export default function Home() {
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+    
       
     </div>
+    <Footer />
     </>
   )
 }

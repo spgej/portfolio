@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/Home.module.css"
 import Link from "next/link"
+import Footer from "../../components/Footer"
 
 export default function Dev() {
     return (
@@ -42,6 +43,7 @@ export default function Dev() {
           </a>
         </div>
       </main>
+      <Footer />
         </>
     )
 }
