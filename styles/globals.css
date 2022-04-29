@@ -260,6 +260,7 @@ h2 {
   font-family: "Nexa Bold", sans-serif;
   font-size: 8vw;
   z-index: 3;
+  initial-letter: 2;
 }
 
 .ctabtn {

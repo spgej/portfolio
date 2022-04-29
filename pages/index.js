@@ -3,7 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from "/components/Navbar"
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import Webstack from "/components/Webstack"
+import { Button, ButtonGroup, Stack } from '@chakra-ui/react'
 import Footer from "/components/Footer"
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
     
       
     </div>
+    <Webstack 
+      content=""
+    />
     <Footer />
     </>
   )

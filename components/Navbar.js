@@ -9,8 +9,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-
-        <Breadcrumb color="text" bg="border" fontFamily="Nexa Light" padding="30px">
+        <Breadcrumb color="text" bg="border" fontFamily="Nexa Light" padding="1rem">
           <BreadcrumbItem isCurrentPage>
             <Link href="/">
               <BreadcrumbLink padding="0 20px">home</BreadcrumbLink>
@@ -27,8 +26,6 @@ const Navbar = () => {
             </Link>
         </BreadcrumbItem>
         </Breadcrumb>
-
-    
   )
 }
 
