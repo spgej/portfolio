@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <>
             <Box className={styles.footer}>
-                <p>Fourth Page &copy; {currentYear}</p>
+                <p>Fourth Page &copy; {currentYear} ALL RIGHTS RESERVED.</p>
             </Box>
         </>
     )
