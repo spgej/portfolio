@@ -77,7 +77,7 @@ h2 {
   background-color: #282c34;
   margin: 0;
   height: auto;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,26 +94,6 @@ h2 {
   display: block;
 }
 
-.footer {
-  bottom: 0;
-  padding: .1rem;
-  width: 100%;
-  background-color: #1a1d24;
-  color: white;
-}
-
-.footer::before {
-  margin: 500px;
-}
-
-
-
-.footer p {
-  text-align: center;
-  opacity: 50%;
-  font-size: .7rem;
-}
-
 .content {
   color: white;
   max-width: 800px;
@@ -126,8 +106,10 @@ h2 {
 }
 
 #image {
-  width: 100%;
+  max-width: 100%;
+  width: 450px;
   height: 350px;
+  margin: auto;
   object-fit: cover;
   border-radius: .3rem;
 }
@@ -147,18 +129,6 @@ h2 {
   border: #1a1d24;
   color: #fdfdfd;
   font-size: 1.2rem;
-}
-
-.rbtn {
-  border-radius: 100%;
-  height: 75px;
-  width: 75px;
-  background-color: #3c3f43;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  border: #1a1d24;
-  color: #fdfdfd;
 }
 
 .rbtn:hover {
@@ -220,9 +190,7 @@ h2 {
 
 .container-box {
   height: auto;
-  min-height: 80vh;
   background-color: #282c34;
-  margin: 100px 0;
 }
 
 
@@ -268,13 +236,18 @@ h2 {
 
 .cta {
   margin: 0 auto;
+  display: block;
   text-align: center;
   text-transform: uppercase;
   color: white;
   font-family: "Nexa Bold", sans-serif;
-  font-size: 6vw;
+  font-size: 54px;
   z-index: 3;
   initial-letter: 2;
+}
+
+.cta::first-letter {
+  font-size: 72px;
 }
 
 .ctabtn {
@@ -301,6 +274,7 @@ h2 {
 
 .stack-box {
   display: flex;
+  height: auto;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
@@ -309,10 +283,24 @@ h2 {
 
 .stack-box-content {
   text-align: center;
+  padding: 10px;
   font-family: "Nexa Light";
   text-transform: lowercase;
-  max-width: 180px;  
-  margin: 5px auto; 
+  background-color: #3d434f;
+  border-radius: 4px;
+  height: 280px;
+  width: 250px;  
+  margin: auto 20px;
+  z-index: 2;
+}
+
+.dev-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #282c34;
 }
 
 @keyframes App-logo-spin {
@@ -335,16 +323,17 @@ h2 {
 
 @media only screen and (max-width: 800px) {
   .stack-box {
-    flex-direction: column;
-    max-height: auto;
+    display: block;
+    height: auto;
   }
 
-  .container-box {
-    height: 100vh;
-    margin: auto;
+  .dev-div {
+    padding: 40px 0;
   }
 
   .stack-box-content {
-    margin: 20px auto;
+    margin: 30px auto;
+    z-index: 1000;
   }
+
 }

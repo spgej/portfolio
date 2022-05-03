@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar"
 import styles from "../../styles/Home.module.css"
 import Link from "next/link"
 import Footer from "../../components/Footer"
+import Logo from "../../components/Logo"
 
 export default function Dev() {
     return (
@@ -9,8 +10,9 @@ export default function Dev() {
            <Navbar/>
             <main className={styles.main}>
         <h1 className="cta">Portfolio</h1>
-        <img src="/images/logo-border.png" className="App-logo" alt="logo-border" />
-                <img src="/images/logo.png" className="App-logo-2" alt="logo" />
+        <Logo />
+
+        
         <div className={styles.grid}>
           <Link href="/NASA/App">
           <a className={styles.card}>
