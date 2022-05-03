@@ -10,7 +10,6 @@ export default function Dev() {
            <Navbar/>
             <main className={styles.main}>
         <h1 className="cta">Portfolio</h1>
-        <Logo />
 
         
         <div className={styles.grid}>

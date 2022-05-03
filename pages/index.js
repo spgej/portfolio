@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Navbar from "/components/Navbar"
 import { Button, ButtonGroup, Stack } from '@chakra-ui/react'
 import Footer from "/components/Footer"
+import Logo from '../components/Logo'
 
 
 export default function Home() {
@@ -14,8 +15,7 @@ export default function Home() {
 
         <div className="fourth-container">
             <header className="App-header">
-                <img src="/images/logo-border.png" className="App-logo" alt="logo-border" />
-                <img src="/images/logo.png" className="App-logo-2" alt="logo" />
+                <Logo />                
                 <h1 className="cta">Fourth Page</h1>
                 <h6 className="subheading">Web Development</h6>
                 <ButtonGroup size="md" variant="outline" isAttached>

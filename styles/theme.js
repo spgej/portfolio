@@ -11,6 +11,16 @@ export const newTheme = extendTheme({
             baseStyle: {
                 fontFamily: "Nexa Light"
             }
+        },
+        Divider: {
+            baseStyle: {
+                border: "solid 19px white",
+                margin: "auto",
+                borderWidth: "10px",
+                borderRadius: "8px",
+                borderColor: "#39aece"
+            }
+
         }
     }
 })

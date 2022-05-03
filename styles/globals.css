@@ -17,6 +17,12 @@
 
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 html,
 body {
   background-color: #282c34;
@@ -83,7 +89,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .header {
@@ -164,8 +170,8 @@ h2 {
 
 
 .App-logo {
-  height: 60vmin;
-  max-height: 500px;
+  height: 80vmin;
+  max-height: 800px;
   pointer-events: none;
   position: absolute;
   z-index: 0;
@@ -185,12 +191,8 @@ h2 {
 .subheading {
   font-family: "Nexa Light", sans-serif;
   z-index: 1;
+  color: #39aece;
   text-transform: lowercase;
-}
-
-.container-box {
-  height: auto;
-  background-color: #282c34;
 }
 
 
@@ -232,6 +234,19 @@ h2 {
   position: relative;
   flex-direction: column;
   height: 100vh;
+}
+
+.dev-bio {
+  max-width: 400px;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.dev-row {
+  display: flex;
+  flex-direction: row;
+  padding: 125px 30px;
+  justify-content: center;
 }
 
 .cta {
@@ -278,7 +293,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  margin: 100px;
+  padding: 100px 0 200px;
 }
 
 .stack-box-content {
@@ -287,11 +302,10 @@ h2 {
   font-family: "Nexa Light";
   text-transform: lowercase;
   background-color: #3d434f;
-  border-radius: 4px;
-  height: 280px;
+  border-radius: 8px;
+  height: 250px;
   width: 250px;  
-  margin: auto 20px;
-  z-index: 2;
+  margin: auto 10px;
 }
 
 .dev-div {
@@ -330,10 +344,24 @@ h2 {
   .dev-div {
     padding: 40px 0;
   }
-
-  .stack-box-content {
-    margin: 30px auto;
-    z-index: 1000;
+  .dev-row {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
   }
 
+  .stack-box-content {
+    margin: 10px auto;
+    width: 97%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+  .dev-bio {
+    width: 90%;
+  }
 }

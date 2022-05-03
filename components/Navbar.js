@@ -25,6 +25,9 @@ const Navbar = () => {
               <BreadcrumbLink padding="0 20px">portfolio</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>
+        <BreadcrumbItem>
+              <BreadcrumbLink href="https://www.github.com/spgej" padding="0 20px">github</BreadcrumbLink>
+        </BreadcrumbItem>
         </Breadcrumb>
   )
 }
