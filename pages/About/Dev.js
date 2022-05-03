@@ -18,20 +18,25 @@ export default function Dev() {
                 <Image 
                     src="/images/IMG_1459.JPG"
                     borderRadius="8px"
-                    boxSize="250px"
+                    w="250px"
+                    h="400"
                     m="20px"
                     alt="Samuel Page"
                     objectFit="cover"
 
                     />
                     <div className="dev-bio">
-                        <h2 className="subheading" style={{fontSize:"40px"}}>hello. I'm Samuel.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <h2 className="subheading" style={{fontSize:"50px"}}><span style={{
+                            fontFamily:"Nexa Bold",
+                            fontSize: "70px",
+                            textTransform:"uppercase"
+                        }}>hello.</span> I'm Samuel.</h2>
+                        <p style={{textTransform:"lowercase", color:"#b8d3d6"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </div>
                     
                 </div>
             </main>
-            <Divider w="100px"/>
+            <Divider w="60%"/>
                  <Webstack />
 
                 <Footer />

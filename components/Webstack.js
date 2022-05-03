@@ -5,40 +5,53 @@ import { FaStore, FaServer, FaKeyboard, FaLaptopCode } from "react-icons/fa";
 
 const Webstack = () => {
   return (
-    <>
+    <div style={{
+      maxWidth:"800px",
+      margin: "auto"
+    }}>
+    <h2 style={{
+      color:"#39aece",
+      textAlign: "left",
+      fontFamily: "Nexa Light",
+      margin: "10px",
+      paddingTop: "100px",
+      fontSize: "50px",
+      textTransform: "lowercase"
+
+    }}>Webstack</h2>
     <div className="stack-box" bg="background" color="white" style={{maxWidth: "900px", margin:"auto", height:"auto",}}>
         <Box className="stack-box-content">
-        <h1 style={{fontSize:"1.5rem"}}>Front-End</h1>
-        <FaLaptopCode className="icon" size="120px" style={{
+        <h1 className="stbxh">Front-End</h1>
+        <FaLaptopCode className="icon" size="80px" style={{
           margin: "auto",
-          color: "#15181D",
+          color: "#b8d3d6",
           margin: "5px auto"
 
         }} />
-        <p>HTML, CSS, JavaScript, React, Chakra-ui, Next.js</p>
+        <p style={{paddingBottom:"10px"}}>HTML, CSS, JavaScript, React, Chakra-ui, Next.js</p>
         </Box>
         <Box className="stack-box-content">
-        <h1 style={{fontSize:"1.5rem"}}>Back-End</h1>
-        <FaServer className="icon" size="120px" style={{
+        <h1 className="stbxh">Back-End</h1>
+        <FaServer className="icon" size="80px" style={{
           margin: "auto",
-          color: "#15181D",
+          color: "#b8d3d6",
           margin: "5px auto"
 
         }} />
-        <p>Node.js, MongoDB, SQL</p>
+        <p style={{paddingBottom:"10px"}}>Node.js, MongoDB, SQL</p>
         </Box>
         <Box className="stack-box-content">
-        <h1 style={{fontSize:"1.5rem"}}>Workspace</h1>
-        <FaKeyboard className="icon" size="120px" style={{
+        <h1 className="stbxh">Workspace</h1>
+        <FaKeyboard className="icon" size="80px" style={{
           margin: "auto",
-          color: "#15181D",
+          color: "#b8d3d6",
           margin: "5px auto"
 
         }} />
-        <p>MacOS, Windows, VSCode, Git, Terminal</p>
+        <p style={{paddingBottom:"10px"}}>MacOS, Windows, VSCode, Git, Terminal</p>
         </Box>
     </div>
-    </>
+    </div>
   )
 }
 

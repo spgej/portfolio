@@ -16,7 +16,7 @@ export const newTheme = extendTheme({
             baseStyle: {
                 border: "solid 19px white",
                 margin: "auto",
-                borderWidth: "10px",
+                borderWidth: "8px",
                 borderRadius: "8px",
                 borderColor: "#39aece"
             }

@@ -46,6 +46,15 @@ h1 {
   text-transform: uppercase;
 }
 
+
+.stbxh {
+  font-size: 18px;
+}
+
+.stbxh::first-letter {
+  font-size: 26px;
+}
+
 h2 {
   text-transform: uppercase;
 }
@@ -293,18 +302,21 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  padding: 100px 0 200px;
+  padding-bottom: 200px;
 }
 
 .stack-box-content {
   text-align: center;
-  padding: 10px;
   font-family: "Nexa Light";
   text-transform: lowercase;
+  padding-top: 20px;
   background-color: #3d434f;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
   border-radius: 8px;
-  height: 250px;
-  width: 250px;  
+  height: 225px;
+  width: 225px;  
   margin: auto 10px;
 }
 
