@@ -183,6 +183,8 @@ h2 {
   max-height: 800px;
   pointer-events: none;
   position: absolute;
+  right: 50;
+  top: 50;
   z-index: 0;
   opacity: 40%;
 }
@@ -320,6 +322,16 @@ h2 {
   margin: auto 10px;
 }
 
+.stack-subhead {
+    color: #39aece;
+    text-align: left;
+    font-family: "Nexa Light";
+    margin: 0 40px 10px;
+    padding-top: 100px;
+    font-size: 50px;
+    text-transform: lowercase;
+}
+
 .dev-div {
   display: flex;
   flex-direction: column;
@@ -364,7 +376,7 @@ h2 {
 
   .stack-box-content {
     margin: 10px auto;
-    width: 97%;
+    width: 50%;
     height: auto;
   }
 
@@ -375,5 +387,9 @@ h2 {
 
   .dev-bio {
     width: 90%;
+  }
+
+  .stack-subhead {
+    text-align: center;
   }
 }

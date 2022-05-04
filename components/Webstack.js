@@ -9,16 +9,7 @@ const Webstack = () => {
       maxWidth:"800px",
       margin: "auto"
     }}>
-    <h2 style={{
-      color:"#39aece",
-      textAlign: "left",
-      fontFamily: "Nexa Light",
-      margin: "10px",
-      paddingTop: "100px",
-      fontSize: "50px",
-      textTransform: "lowercase"
-
-    }}>Webstack</h2>
+    <h2 className="stack-subhead">Webstack</h2>
     <div className="stack-box" bg="background" color="white" style={{maxWidth: "900px", margin:"auto", height:"auto",}}>
         <Box className="stack-box-content">
         <h1 className="stbxh">Front-End</h1>

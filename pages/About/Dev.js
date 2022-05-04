@@ -11,7 +11,7 @@ import { Divider } from '@chakra-ui/react'
 
 export default function Dev() {
     return (
-        <Box bg="background" color="white">
+        <Box className="background-logo" bg="background" color="white">
             <Navbar />
             <main className="">
                 <div className="dev-row">
