@@ -10,9 +10,9 @@ const Footer = () => {
 
     return (
         <>
-            <Box className={styles.footer}>
+            <div className={styles.footer}>
                 <p>Fourth Page &copy; {currentYear} ALL RIGHTS RESERVED.</p>
-            </Box>
+            </div>
         </>
     )
 }

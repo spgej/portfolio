@@ -1,9 +1,10 @@
+import { Box } from "@chakra-ui/react"
+
 const Logo = () => {
     return (
-        <>
-                <img src="" className="background-logo" alt="logo-border" />
-                {/* <img src="/images/FOURTH_PAGE_ICON.svg" className="App-logo-2" alt="logo" /> */}
-        </>
+        <Box className="background-box">
+                <img src="/images/FO?URTH_PAGE_ICON.svg" className="App-logo-2" alt="logo" />
+        </Box>
     )
 
 }

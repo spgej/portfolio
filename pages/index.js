@@ -19,8 +19,20 @@ export default function Home() {
                 <h1 className="cta">Fourth Page</h1>
                 <h6 className="subheading">Web Development</h6>
                 <ButtonGroup size="md" variant="outline" isAttached>
-                  <Button>contact</Button>
-                  <Button>portfolio</Button>
+                  <Link href="/Portfolio/Examples">
+                    <Button
+                    _hover={{
+                      color:"#32DBA3",
+                      borderColor: "#32DBA3"
+                    }}
+                  >portfolio</Button>
+                  </Link>
+                  <Button
+                       _hover={{
+                      color:"#32DBA3",
+                      borderColor: "#32DBA3"
+                    }}
+                  >contact</Button>
                 </ButtonGroup>
             </header>
         </div>

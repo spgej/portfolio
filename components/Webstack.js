@@ -1,13 +1,14 @@
 import React from 'react'
 import { Box } from '@chakra-ui/layout'
-import { FaStore, FaServer, FaKeyboard, FaLaptopCode } from "react-icons/fa";
+import { FaServer, FaKeyboard, FaLaptopCode } from "react-icons/fa";
 
 
 const Webstack = () => {
   return (
     <div style={{
       maxWidth:"800px",
-      margin: "auto"
+      margin: "auto",
+      height: "auto"
     }}>
     <h2 className="stack-subhead">Webstack</h2>
     <div className="stack-box" bg="background" color="white" style={{maxWidth: "900px", margin:"auto", height:"auto",}}>

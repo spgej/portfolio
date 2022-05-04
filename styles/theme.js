@@ -3,14 +3,15 @@ import { extendTheme } from "@chakra-ui/react";
 export const newTheme = extendTheme({
     colors: {
         background: "#282c34",
-        text: "#eaeaea",
+        text: "#b8d3d6",
         border:"#15181D"
     },
     components: {
         Button: {
             baseStyle: {
-                fontFamily: "Nexa Light"
-            }
+                fontFamily: "Nexa Bold",
+                textTransform: "uppercase"
+            },
         },
         Divider: {
             baseStyle: {
@@ -18,7 +19,7 @@ export const newTheme = extendTheme({
                 margin: "auto",
                 borderWidth: "8px",
                 borderRadius: "8px",
-                borderColor: "#39aece"
+                borderColor: "#32DBA3"
             }
 
         }
