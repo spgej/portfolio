@@ -217,7 +217,7 @@ h2 {
 .subheading {
   font-family: "Nexa Light", sans-serif;
   z-index: 1;
-  color: #39aece;
+  color: #32DBA3;
   text-transform: lowercase;
 }
 
@@ -285,7 +285,7 @@ h2 {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: #b8d3d6;
   font-family: "Nexa Bold", sans-serif;
   font-size: 54px;
   z-index: 3;
@@ -343,7 +343,7 @@ h2 {
 }
 
 .stack-subhead {
-    color: #39aece;
+    color: #32DBA3;
     text-align: left;
     font-family: "Nexa Light";
     margin: 0 40px 10px;

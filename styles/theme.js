@@ -10,7 +10,7 @@ export const newTheme = extendTheme({
         Button: {
             baseStyle: {
                 fontFamily: "Nexa Bold",
-                textTransform: "uppercase"
+                textTransform: "uppercase",
             },
         },
         Divider: {
@@ -19,7 +19,7 @@ export const newTheme = extendTheme({
                 margin: "auto",
                 borderWidth: "8px",
                 borderRadius: "8px",
-                borderColor: "#32DBA3"
+                borderColor: "#39aece"
             }
 
         }

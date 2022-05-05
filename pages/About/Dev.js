@@ -27,7 +27,7 @@ export default function Dev() {
 
                     />
                     <div className="dev-bio">
-                        <h2 className="subheading" style={{fontSize:"50px", color:"#39AECE"}}><span style={{
+                        <h2 className="subheading" style={{fontSize:"50px", color:"#32DBA3"}}><span style={{
                             fontFamily:"Nexa Bold",
                             fontSize: "70px",
                             textTransform:"uppercase",
