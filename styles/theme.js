@@ -11,6 +11,7 @@ export const newTheme = extendTheme({
             baseStyle: {
                 fontFamily: "Nexa Bold",
                 textTransform: "uppercase",
+                color: "white",
             },
         },
         Divider: {

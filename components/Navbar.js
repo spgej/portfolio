@@ -25,9 +25,6 @@ const Navbar = () => {
               <BreadcrumbLink padding="0 20px" _hover={{color:"#32DBA3"}}>portfolio</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>
-        <BreadcrumbItem >
-              <BreadcrumbLink href="https://www.github.com/spgej" padding="0 20px" _hover={{color:"#32DBA3"}}>github</BreadcrumbLink>
-        </BreadcrumbItem>
         </Breadcrumb>
   )
 }

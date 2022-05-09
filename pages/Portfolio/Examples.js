@@ -16,7 +16,7 @@ export default function Dev() {
         <div className={styles.grid}>
           <Link href="/NASA/App">
           <a className={styles.card}>
-            <h2 className="card-head">NASA Pictures</h2>
+            <h2 className="card-head">NASA Photos</h2>
             <p>Astronomy Picture of the Day built using React.js and the NASA APOD API.</p>
           </a>
           </Link>
@@ -31,7 +31,7 @@ export default function Dev() {
             className={styles.card}
           >
             <h2 className="card-head">Personal Site</h2>
-            <p>Previous personal site built using HTML, CSS, Bootstrap.</p>
+            <p>Previous personal site built using HTML, CSS, Bootstrap</p>
           </a>
 
           <a

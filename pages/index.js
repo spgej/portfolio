@@ -6,7 +6,8 @@ import Navbar from "/components/Navbar"
 import { Button, ButtonGroup, Divider, Stack } from '@chakra-ui/react'
 import Footer from "/components/Footer"
 import { Box } from '@chakra-ui/react'
-import { FaBroadcastTower } from "react-icons/fa"
+import { VscDeviceMobile } from "react-icons/vsc"
+import { GiBreakingChain, GiAerialSignal, GiTablet } from "react-icons/gi"
 
 
 export default function Home() {
@@ -45,26 +46,51 @@ export default function Home() {
         <link rel="icon" href="images/favicon.ico" />
       </Head>
     </div>
-    <Box h="800px" w="100vw" bg="background" padding="30px">
-          <Box maxW="800px" h="auto" bg="background" margin="auto" justifyContent="center" alignItems="center" display="flex" flexDirection="row">
-                  <Box w="auto" margin="auto">
-                  <FaBroadcastTower
+    <Box h="auto" w="100%" bg="background" display="flex" flexDirection="column" padding="100px 0 200px">
+          <Box className="reason-box">
+                  <Box w="140px" margin="auto">
+                  <GiAerialSignal
                     size="100px"
                     style={{
-                      margin:"0 20px",
+                      margin:"20px",
+                      color:"#b8d3d6",
+                      
+                    }}
+                   />
+                  </Box>
+                  <p className="reason-description">at <span className="reason-emphasis">Fourth Page</span> we <span className="reason-emphasis">make sure</span> your website gets found by using modern <span className="reason-emphasis">search engine optimization</span> tools</p>
+          </Box>
+          <Box className="reason-box">
+                  <Box w="140px" margin="auto">
+                  <GiBreakingChain
+                    size="100px"
+                    style={{
+                      margin:"20px",
                       color:"#b8d3d6"
                     }}
                    />
                   </Box>
-                  <p style={{
-                    color:"#32DBA3",
-                    fontFamily:"Nexa Light",
-                    fontSize:"23px",
-                    maxWidth:"550px",
-                    textTransform:"lowercase",
-                  }}>at <span style={{fontFamily:"Nexa Bold", textTransform:"uppercase", fontSize:"28px", color:"#b8d3d6"}}>Fourth Page</span> we <span style={{fontFamily:"Nexa Bold", textTransform:"uppercase", fontSize:"28px", color:"#b8d3d6"}} >make sure</span> your website gets found by using modern <span style={{fontFamily:"Nexa Bold", textTransform:"uppercase", fontSize:"28px", color:"#b8d3d6"}}>search engine optimization</span> tools</p>
+                  <p className="reason-description"><span className="reason-emphasis">Break free</span> from premade templates and work with us to craft <span className="reason-emphasis">custom components</span> for your website </p>
           </Box>
-          <Divider width="400px" margin="40px auto" />
+
+          <Box className='reason-box'>
+                  <Box w="140px" margin="auto">
+                  <VscDeviceMobile
+                    size="100px"
+                    style={{
+                      margin:"20px",
+                      color:"#b8d3d6"
+                    }}
+                   />
+                  </Box>
+                  <p className="reason-description">around <span className="reason-emphasis">70 percent</span> of internet traffic is on mobile devices. we ensure your website is <span className="reason-emphasis">optimized</span> for not just desktop, but everthing else</p>
+          </Box>
+          <ButtonGroup size="lg" variant="outline" margin="20px auto" color="white">
+          <Button _hover={{
+                      color:"#32DBA3",
+                      borderColor: "#32DBA3"
+                    }}>Get Started</Button>
+          </ButtonGroup>
     </Box>
     <Footer />
     </>
