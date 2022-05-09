@@ -16,12 +16,12 @@ const Navbar = () => {
             </Link>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <Link href="/About/Dev">
-              <BreadcrumbLink padding="0 20px" _hover={{color:"#32DBA3"}}>dev</BreadcrumbLink>
+            <Link href="/About">
+              <BreadcrumbLink padding="0 20px" _hover={{color:"#32DBA3"}}>about</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>
         <BreadcrumbItem>
-            <Link href="/Portfolio/Examples">
+            <Link href="/Portfolio">
               <BreadcrumbLink padding="0 20px" _hover={{color:"#32DBA3"}}>portfolio</BreadcrumbLink>
             </Link>
         </BreadcrumbItem>

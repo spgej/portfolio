@@ -22,18 +22,20 @@ export default function Home() {
                 <h1 className="cta">Fourth Page</h1>
                 <h6 className="subheading">Web Development</h6>
                 <ButtonGroup size="md" variant="outline" isAttached>
-                  <Link href="/Portfolio/Examples">
+                  <Link href="/Portfolio">
                     <Button
                     _hover={{
                       color:"#32DBA3",
-                      borderColor: "#32DBA3"
+                      borderColor: "#32DBA3",
+                      boxShadow: "0 1px 12px green"
                     }}
                   >portfolio</Button>
                   </Link>
                   <Button
                        _hover={{
                       color:"#32DBA3",
-                      borderColor: "#32DBA3"
+                      borderColor: "#32DBA3",
+                      boxShadow: "0 1px 12px green"
                     }}
                   >contact</Button>
                 </ButtonGroup>
@@ -46,6 +48,9 @@ export default function Home() {
         <link rel="icon" href="images/favicon.ico" />
       </Head>
     </div>
+    <Box w="100%" h="auto" m="auto" textAlign="center" bg="border" color="#b8d3d6">
+        <h1 style={{maxWidth:"1000px", margin:"auto", fontSize:"22px", padding:"20px"}}>Create your digital presence</h1>
+    </Box>
     <Box h="auto" w="100%" bg="background" display="flex" flexDirection="column" padding="100px 0 200px">
           <Box className="reason-box">
                   <Box w="140px" margin="auto">
@@ -72,7 +77,6 @@ export default function Home() {
                   </Box>
                   <p className="reason-description"><span className="reason-emphasis">Break free</span> from premade templates and work with us to craft <span className="reason-emphasis">custom components</span> for your website </p>
           </Box>
-
           <Box className='reason-box'>
                   <Box w="140px" margin="auto">
                   <VscDeviceMobile
@@ -83,15 +87,17 @@ export default function Home() {
                     }}
                    />
                   </Box>
-                  <p className="reason-description">around <span className="reason-emphasis">70 percent</span> of internet traffic is on mobile devices. we ensure your website is <span className="reason-emphasis">optimized</span> for not just desktop, but everthing else</p>
+                  <p className="reason-description">around <span className="reason-emphasis">70 percent</span> of internet traffic is on mobile devices. we ensure your website is <span className="reason-emphasis">optimized</span> for not just desktop, but everything else</p>
           </Box>
-          <ButtonGroup size="lg" variant="outline" margin="20px auto" color="white">
+          <ButtonGroup size="lg" variant="outline" margin="20px auto" color="white" paddingBottom="75px">
           <Button _hover={{
                       color:"#32DBA3",
-                      borderColor: "#32DBA3"
+                      borderColor: "#32DBA3",
+                      boxShadow: "0 1px 12px green"
                     }}>Get Started</Button>
           </ButtonGroup>
     </Box>
+   
     <Footer />
     </>
   )

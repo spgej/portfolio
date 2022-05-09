@@ -98,7 +98,9 @@ h2 {
 
 
 .App {
-  background-color: #282c34;
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/43/80/hx4LX5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   height: auto;
   min-height: 100vh;
@@ -240,6 +242,14 @@ h2 {
   color: #61dafb;
 }
 
+.content {
+  backdrop-filter: blur(8px);
+  padding: 50px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .fourth-container {
   display: flex;
   min-height: 100vh;
@@ -353,7 +363,7 @@ h2 {
   max-width:800px;
   height: auto;
   background-color:#282c34;
-  margin:40px auto;
+  margin:30px auto;
   justify-content:center;
   align-items:center; 
   display: flex;

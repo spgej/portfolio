@@ -85,12 +85,13 @@
   z-index: 1;
   margin: 1rem;
   background-color: #3d434f;
-  padding: 1.5rem;
+  padding: 0;
   height: 185px;
   font-family: "Nexa Light", sans-serif;
   text-transform: lowercase;
   text-align: left;
   color: inherit;
+  overflow: hidden;
   text-decoration: none;
   border-radius: 8px;
   transition: color 0.15s ease, border-color 0.15s ease;
@@ -101,8 +102,9 @@
 .card:hover,
 .card:focus,
 .card:active {
+  border: 2px solid #32DBA3;
   color: #32DBA3;
-  border-color: #0070f3;
+  box-shadow: 0 1px 12px green;
 }
 
 .card h2 {
