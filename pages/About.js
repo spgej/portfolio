@@ -34,7 +34,7 @@ export default function Dev() {
                             textTransform:"uppercase",
                             color:"#b8d3d6"
                         }}>hello.</span> I'm Samuel.</h2>
-                        <p style={{textTransform:"lowercase", color:"#b8d3d6", fontFamily:"Nexa light", fontSize:"18px"}}> I started Fourth Page with the goal of helping local buisnesses create, or strengthen, their online presence during the pandemic. Whether you own a restaurant or podcast, Fourth Page is here to help you directly, speaking in terms you understand, to translate ideas into digital reality.</p>
+                        <p style={{textTransform:"lowercase", color:"#b8d3d6", fontFamily:"Nexa light", fontSize:"18px"}}> I started Fourth Page with the goal of helping local buisnesses create, or strengthen, their online presence during the pandemic. Whether you own a restaurant or have started a podcast, Fourth Page is here to help you directly, speaking in terms you understand, to translate ideas into a digital reality.</p>
                     </div>
                     
                 </div>
@@ -44,12 +44,14 @@ export default function Dev() {
                 <FaLinkedin className="icon" size="40px" style={{
                     margin:"10px",
                     color:"#b8d3d6",
+                    cursor:"pointer"
                 }} />
                 </Link>
                <Link href="https://www.github.com/spgej">
                <FaGithubSquare className="icon" size="40px" style={{
                     margin: "10px",
                     color: "#b8d3d6",
+                    cursor:"pointer"
                     
                 }} />
                </Link>

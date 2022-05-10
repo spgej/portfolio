@@ -31,7 +31,7 @@ export default function Home() {
                     }}
                   >portfolio</Button>
                   </Link>
-                  <Button
+                  <Button onClick={() => window.location = 'mailto:samuel@fourthpage.com?subject=New_Project'}
                        _hover={{
                       color:"#32DBA3",
                       borderColor: "#32DBA3",
@@ -90,7 +90,7 @@ export default function Home() {
                   <p className="reason-description">around <span className="reason-emphasis">70 percent</span> of internet traffic is on mobile devices. we ensure your website is <span className="reason-emphasis">optimized</span> for not just desktop, but everything else</p>
           </Box>
           <ButtonGroup size="lg" variant="outline" margin="20px auto" color="white" paddingBottom="75px">
-          <Button _hover={{
+          <Button onClick={() => window.location = 'mailto:samuel@fourthpage.com?subject=New_Project'} _hover={{
                       color:"#32DBA3",
                       borderColor: "#32DBA3",
                       boxShadow: "0 1px 12px green"
