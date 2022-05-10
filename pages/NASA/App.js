@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Image from "next/image";
+import { Image } from '@chakra-ui/react'
 
 
 const NASA_API =
