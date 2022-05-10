@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Image from "next/image";
 
 
 const NASA_API =
@@ -37,7 +38,7 @@ export default function App() {
         <h1 className="">Astronomy Picture of the Day</h1>
         
           <h3>{response.title}</h3>
-          <img id="image" alt="space-pic" src={response.url}></img>
+          <Image id="image" alt="space-pic" src={response.url} />
           <h6>{response.date}</h6>
 
           

@@ -33,21 +33,21 @@ export default function Dev() {
                             fontSize: "70px",
                             textTransform:"uppercase",
                             color:"#b8d3d6"
-                        }}>hello.</span> I'm Samuel.</h2>
+                        }}>hello.</span> I&apos;m Samuel.</h2>
                         <p style={{textTransform:"lowercase", color:"#b8d3d6", fontFamily:"Nexa light", fontSize:"18px"}}> I started Fourth Page with the goal of helping local buisnesses create, or strengthen, their online presence during the pandemic. Whether you own a restaurant or have started a podcast, Fourth Page is here to help you directly, speaking in terms you understand, to translate ideas into a digital reality.</p>
                     </div>
                     
                 </div>
 
                 <Box h="auto" display="flex" flexDir="row" w="100vw" justifyContent="center" marginBottom="50px">
-                <Link href="https://www.linkedin.com/in/samuel-page09/">
+                <Link href="https://www.linkedin.com/in/samuel-page09/" passHref>
                 <FaLinkedin className="icon" size="40px" style={{
                     margin:"10px",
                     color:"#b8d3d6",
                     cursor:"pointer"
                 }} />
                 </Link>
-               <Link href="https://www.github.com/spgej">
+               <Link href="https://www.github.com/spgej" passHref>
                <FaGithubSquare className="icon" size="40px" style={{
                     margin: "10px",
                     color: "#b8d3d6",

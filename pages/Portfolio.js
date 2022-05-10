@@ -12,7 +12,7 @@ export default function Dev() {
             <main className={styles.main}>
         <h1 className="cta">Portfolio</h1>
 
-        <img src="/images/FOURTH_PAGE_ICON.svg" className="App-logo" alt="logo-border" />
+        <Image src="/images/FOURTH_PAGE_ICON.svg" className="App-logo" alt="logo-border" />
 
         <div className={styles.grid}>
           <Link href="/NASA/App">

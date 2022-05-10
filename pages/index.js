@@ -17,12 +17,12 @@ export default function Home() {
 
         <div className="fourth-container">
             <header className="App-header">
-                <img src="/images/FOURTH_PAGE_ICON.svg" className="App-logo" alt="logo-border" />
+                <Image src="/images/FOURTH_PAGE_ICON.svg" className="App-logo" alt="logo-border" />
                 {/* <img src="/images/FOURTH_PAGE_ICON.svg" className="App-logo-2" alt="logo" /> */}
                 <h1 className="cta">Fourth Page</h1>
                 <h6 className="subheading">Web Development</h6>
                 <ButtonGroup size="md" variant="outline" isAttached>
-                  <Link href="/Portfolio">
+                  <Link href="/Portfolio" passHref>
                     <Button
                     _hover={{
                       color:"#32DBA3",
