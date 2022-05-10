@@ -44,7 +44,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Fourth Page Web Development</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Fourth Page Web Development. Create your digital presence, get found and look good." />
         <link rel="icon" href="images/favicon.ico" />
       </Head>
     </div>

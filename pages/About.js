@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/layout'
+import Head from 'next/head'
 import Footer from '/components/Footer'
 import Navbar from '/components/Navbar'
 import Webstack from '/components/Webstack'
@@ -14,6 +15,11 @@ export default function Dev() {
 
     return (
         <Box className="fourth-container" bg="background" color="white">
+        <Head>
+            <title>Fourth Page | About</title>
+            <meta name="description" content="Fourth Page started with the goal of helping local businesses create or strengthen their online presence. Primary technologies used: React.js, Next.js, MongoDB, VSCode, GitHub." />
+            <link rel="icon" href="images/favicon.ico" />
+        </Head>
             <Navbar />
             <main className="">
                 <div className="dev-row">

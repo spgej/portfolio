@@ -4,11 +4,17 @@ import Link from "next/link"
 import Footer from "/components/Footer"
 import Logo from "/components/Logo"
 import { Image } from '@chakra-ui/react'
+import Head from "next/head"
 
 export default function Dev() {
     return (
         <>
            <Navbar/>
+           <Head>
+            <title>Fourth Page | Portfolio</title>
+            <meta name="description" content="Web applications developed by Fourth Page using various JavaScript technologies and website building sites upon client request." />
+            <link rel="icon" href="images/favicon.ico" />
+        </Head>
             <main className={styles.main}>
         <h1 className="cta">Portfolio</h1>
 
@@ -37,7 +43,7 @@ export default function Dev() {
             height="185px"
             borderRadius="4px"
             objectFit="cover"
-            alt="Nasa Photogography Website"
+            alt="Pasha Grill Authentic Turkish Cuisine"
            />
 
           </a>
@@ -67,7 +73,7 @@ export default function Dev() {
             height="185px"
             borderRadius="4px"
             objectFit="cover"
-            alt="Nasa Photogography Website"
+            alt="Mock Journalism Website"
            />
           </a>
         </div>

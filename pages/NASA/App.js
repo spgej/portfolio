@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { Image } from '@chakra-ui/react'
+import Head from "next/head";
 
 
 const NASA_API =
@@ -33,6 +34,11 @@ export default function App() {
   return (
     <>
     <Navbar />
+    <Head>
+            <title>Fourth Page | NASA Astronomy Picture of the Day</title>
+            <meta name="description" content="Fourth Page web app using React.js and the NASA.gov APOD API to generate an image and provide accompanying details." />
+            <link rel="icon" href="images/favicon.ico" />
+        </Head>
     <div className="App">
         <main className="content">
         <h1 className="">Astronomy Picture of the Day</h1>

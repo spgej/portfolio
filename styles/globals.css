@@ -427,6 +427,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding-top: 0;
   }
 
   .stack-box-content {
@@ -438,6 +439,10 @@ h2 {
   .reason-box {
     flex-direction: column;
     text-align: center;
+  }
+
+  .fourth-container {
+    min-height: 90vh;
   }
 
 }
