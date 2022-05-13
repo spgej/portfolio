@@ -48,8 +48,8 @@ export default function Home() {
         <meta property="og:url" content="https://www.fourthpage.com" />
         <meta property="og:title" content="Fourth Page Web Development" />
         <meta property="og:description" content="Create your digital presence. Get started today." />
-        <meta property="og:image" content="images/ogimg.png" />
-        <link rel="icon" href="images/favicon.ico" />
+        <meta property="og:image" content="/images/ogimg.png" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
     </div>
     <Box w="100%" h="auto" m="auto" textAlign="center" bg="border" color="#b8d3d6">
