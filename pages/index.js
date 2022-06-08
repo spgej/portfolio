@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import { ScaleFade, Image } from '@chakra-ui/react'
+import { Box, ScaleFade, Image, Button, ButtonGroup, Divider, Stack  } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from "/components/Navbar"
-import { Button, ButtonGroup, Divider, Stack } from '@chakra-ui/react'
 import Footer from "/components/Footer"
-import { Box } from '@chakra-ui/react'
 import { VscDeviceMobile } from "react-icons/vsc"
 import { GiBreakingChain, GiAerialSignal, GiTablet } from "react-icons/gi"
 import { useInViewport } from "react-in-viewport"
@@ -61,7 +59,7 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
     </div>
-    <Box w="100%" h="auto" m="auto" textAlign="center" bg="border" color="#b8d3d6" ref={ref}>
+    <Box w="100%" h="auto" m="0" textAlign="center" bg="border" color="#b8d3d6" ref={ref}>
         <h1 style={{maxWidth:"1000px", margin:"auto", fontSize:"22px", padding:"20px"}}>Create your digital presence</h1>
     </Box>
     
