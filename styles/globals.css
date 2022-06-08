@@ -194,8 +194,7 @@ h2 {
 
 
 .App-logo {
-  height: 80vmin;
-  max-height: 800px;
+  height: 500px;
   pointer-events: none;
   position: absolute;
   background-attachment: fixed;
@@ -378,16 +377,16 @@ h2 {
 .reason-emphasis {
   font-family:"Nexa Bold";
   text-transform: uppercase;
-  font-size:28px;
+  font-size:24px;
   color:#b8d3d6;
 }
 
 .reason-description {
   color:#32DBA3;
   font-family:"Nexa Light";
-  font-size: 23px;
+  font-size: 19px;
   margin: 10px;
-  max-width: 550px;
+  max-width: 500px;
   text-transform:lowercase;
 }
 

@@ -74,7 +74,7 @@ export default function Home() {
     >
           <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className="reason-box">
-                  <Box w="140px" margin="auto">
+                  <Box w="140px" margin="0">
                   <GiAerialSignal
                     size="100px"
                     style={{
@@ -89,7 +89,7 @@ export default function Home() {
           </ScaleFade>
           <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className="reason-box">
-                  <Box w="140px" margin="auto">
+                  <Box w="140px" margin="0">
                   <GiBreakingChain
                     size="100px"
                     style={{
@@ -103,7 +103,7 @@ export default function Home() {
           </ScaleFade>
           <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className='reason-box'>
-                  <Box w="140px" margin="auto">
+                  <Box w="140px" margin="0">
                   <VscDeviceMobile
                     size="100px"
                     style={{
