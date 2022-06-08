@@ -9,7 +9,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-        <Breadcrumb separator="" color="text" bg="border" fontFamily="Nexa Bold" textTransform="uppercase" padding="1rem" textAlign="center" margin="auto" w="100%">
+        <Breadcrumb separator="" color="text" bg="border" fontFamily="Nexa Bold" textTransform="uppercase" padding="20px 5px" textAlign="center" margin="auto" w="100%">
           <BreadcrumbItem isCurrentPage>
             <Link href="/" passHref>
               <BreadcrumbLink padding="0 20px" _hover={{color:"#32DBA3"}}>home</BreadcrumbLink>

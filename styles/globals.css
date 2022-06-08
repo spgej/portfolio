@@ -461,4 +461,8 @@ h2 {
   .stack-subhead {
     text-align: center;
   }
+
+  .App-logo {
+    animation: none;
+  }
 }
