@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Image } from '@chakra-ui/react'
+import { ScaleFade, Image } from '@chakra-ui/react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Navbar from "/components/Navbar"
@@ -8,9 +8,18 @@ import Footer from "/components/Footer"
 import { Box } from '@chakra-ui/react'
 import { VscDeviceMobile } from "react-icons/vsc"
 import { GiBreakingChain, GiAerialSignal, GiTablet } from "react-icons/gi"
-
+import { useInViewport } from "react-in-viewport"
+import { useRef } from 'react'
 
 export default function Home() {
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref, 
+    {rootMargin: "-50%"},
+    {disconnectOnLeave: false},
+    {}
+  );
+
   return (
     <>
       <Navbar />
@@ -52,10 +61,20 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
     </div>
-    <Box w="100%" h="auto" m="auto" textAlign="center" bg="border" color="#b8d3d6">
+    <Box w="100%" h="auto" m="auto" textAlign="center" bg="border" color="#b8d3d6" ref={ref}>
         <h1 style={{maxWidth:"1000px", margin:"auto", fontSize:"22px", padding:"20px"}}>Create your digital presence</h1>
     </Box>
-    <Box h="auto" w="100%" bg="background" display="flex" flexDirection="column" padding="100px 0 200px">
+    
+    <Box 
+    h="auto" 
+    w="full" 
+    bg="background" 
+    display="flex" 
+    flexDirection="column" 
+    padding="100px 0 200px"
+   
+    >
+          <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className="reason-box">
                   <Box w="140px" margin="auto">
                   <GiAerialSignal
@@ -69,6 +88,8 @@ export default function Home() {
                   </Box>
                   <p className="reason-description">at <span className="reason-emphasis">Fourth Page</span> we <span className="reason-emphasis">make sure</span> your website gets found by using modern <span className="reason-emphasis">search engine optimization</span> tools</p>
           </Box>
+          </ScaleFade>
+          <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className="reason-box">
                   <Box w="140px" margin="auto">
                   <GiBreakingChain
@@ -81,6 +102,8 @@ export default function Home() {
                   </Box>
                   <p className="reason-description"><span className="reason-emphasis">Break free</span> from premade templates and work with us to craft <span className="reason-emphasis">custom components</span> for your website </p>
           </Box>
+          </ScaleFade>
+          <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{scale: 1.1}}>
           <Box className='reason-box'>
                   <Box w="140px" margin="auto">
                   <VscDeviceMobile
@@ -92,7 +115,8 @@ export default function Home() {
                    />
                   </Box>
                   <p className="reason-description">around <span className="reason-emphasis">70 percent</span> of internet traffic is on mobile devices. we ensure your website is <span className="reason-emphasis">optimized</span> for not just desktop, but everything else</p>
-          </Box>
+          </Box>            
+          </ScaleFade>
           <ButtonGroup size="lg" variant="outline" margin="20px auto" color="white" paddingBottom="75px">
           <Button onClick={() => window.location = 'mailto:samuel@fourthpage.com?subject=New_Project'} _hover={{
                       color:"#32DBA3",
@@ -101,7 +125,6 @@ export default function Home() {
                     }}>Get Started</Button>
           </ButtonGroup>
     </Box>
-   
     <Footer />
     </>
   )
